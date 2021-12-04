@@ -1,0 +1,9 @@
+// types.js
+
+export const GET_ERRORS = 'GET_ERRORS';
+export const SET_CURRENT_USER = 'SET_CURRENT_USER';
+export const REGISTER_SUCCESS="REGISTER_SUCCESS";
+export const NEW_TOKEN="NEW_TOKEN";
+export const REFRESH_TOKEN="REFRESH_TOKEN";
+export const RESET_SUCCESS="RESET_SUCCESS";
+export const RESET_AUTH_DATA="RESET_AUTH_DATA";

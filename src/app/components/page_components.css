@@ -1,0 +1,75 @@
+.param_main_div{
+    padding: 0px;
+    font-size: 0.85rem;
+}
+.param_div{
+    padding: 0px;
+    min-height: 30px;
+    line-height: 30px;
+}
+.param_div_l{
+    width:30%;
+}
+.param_div_r{
+    width:70% !important;
+}
+.param_inner{
+    margin: 0px;
+    padding-left: 20px;
+    display: none;
+}
+.param_div .minus_icon, .param_div .plus_icon{
+    font-size: 14px;
+    cursor: pointer;
+}
+.param_main_div .minus_icon{
+    display: none;
+}
+.param_main_div.on .minus_icon{
+    display: inline-block;
+}
+.param_main_div.on .plus_icon {
+    display: none;
+}
+.param_main_div.on .param_inner{
+    display: inline-flex;
+    flex-direction: column;
+}
+.afield_list .fa-angle-down{
+    transform: rotate(0deg);
+}
+.qtab{
+    padding: 4px 8px;
+    margin: 0px 5px;
+    font-size: 0.9rem;
+    font-weight: normal;
+    position: relative;
+    cursor: pointer;
+    border-bottom: 2px solid #ccc;
+}
+.qtab.on, .qtab:hover{
+    border-bottom: 2px solid #000;
+}
+.tab_query_content{
+    display: none;
+}
+.tab_query_content.on{
+    display: block;
+}
+.add_filter_obj{
+    position: absolute;
+    right:5px;
+    top:2px;
+    cursor: pointer;
+    opacity: 0.8;
+}
+.remove_filter_obj{
+    cursor: pointer;
+    opacity: 0.8;
+}
+.remove_filter_obj:hover, .add_filter_obj:hover{
+    opacity: 1;
+}
+.sub_menu_list{
+    padding-left: 10px;
+}

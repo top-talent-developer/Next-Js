@@ -1,0 +1,81 @@
+/* done */
+.specs{
+border-radius: 50%;
+height: 80px;
+width:80px;
+z-index: 4 !important 
+}
+
+#navbar{
+    z-index:4!important;
+
+}
+.store-dn-1{
+font-size:.7em ;
+line-height: 2em!important;
+}
+.navbar {
+    color:var(--color_purple);  
+    text-decoration: none;
+    cursor: pointer;
+}
+.home{
+    font-size: 1.5em;
+    color:var(--color_white);
+}
+.input-s, .btn-s{
+    padding:7px 10px;
+    border:none;
+    outline:none;
+}
+.input-s{
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    border:1px solid silver;
+}
+.logo2{
+    display: none;
+}
+.delivery-text{
+    position: absolute;
+    left:0;
+    font-size: .6em;
+    bottom:10px;
+    text-transform: capitalize;
+    line-height: 1.2rem!important;
+}
+.cart-i{
+    font-size: 1.5em;
+}
+.user-i{
+    font-size: 1.4em;
+    height:28px;
+    width:28px;
+    line-height: 1.4em;
+    text-align: center;
+}
+#navbar > .right-ul-cp0{
+    margin-top:4px;
+}
+
+@media screen and (max-width:1024px){
+    .navbar_2 .right-ul-cp0{
+        margin-top:4px;
+    }
+}
+@media screen and (max-width:1210px){
+    .nav_stores{
+        display: none !important;
+    }
+}
+@media screen and (max-width:426px){
+    .pl-md-3, .px-md-3 {
+        padding-left: 0.5em !important;
+    }
+    .pr-md-3, .px-md-3 {
+        padding-right: 0.5em !important;
+    }
+    .navbar_2 .right-ul-cp0{
+        margin-top: 0px !important;
+    }
+}

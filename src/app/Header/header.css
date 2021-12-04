@@ -1,0 +1,142 @@
+.home{
+    background-image: url("../assets/rapo_bg.jpg");
+    background-size:cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.FormDivPopup{
+    margin-top:122px; 
+}
+.Address_Nav {
+    position:static;
+    top:0;
+    height:65px;
+    background: #DDD;
+}
+.main-Div{
+    width:fit-content;
+    background-color: rgba(102, 93, 153, 0.5);
+    border-radius:10px;
+    border:1px solid silver;
+    height: auto !important;
+}
+
+.main-Div .Address_Form{
+    height:60px;
+}
+.main-Div .Input_Address, .main-Div  .Div_Distance{
+    height:100%;
+} 
+
+.home h1{
+    font-size: 1.3em!important;
+    text-shadow:1px 1px 2px white;
+    font-weight: bolder;
+    font-family: sans-serif;
+}
+
+.r-head span{
+    font-size: 2.5em!important;
+    line-height: 0em;
+    text-shadow: 2px 1px 1px grey;
+}
+.home p{
+    font-size: .6em;
+}
+
+.Address_Nav button{
+    background-color: var(--color_purple);
+    color:white;
+    border-radius:5px;
+    font-size:1rem;
+}
+.dheader .account-div{
+    font-size:1.5rem;
+    align-items: center;
+}
+.content_section{
+    display:flex;
+    background: #f2f2f2;
+    height:calc(100vh - 65px);        
+}
+.fbLogin_div{
+    position: fixed;
+    top: calc(50% - 70px);
+    left: calc(50% - 120px);
+    background: #00000066;
+    z-index:99;
+}
+.logout_div{
+    color: blue;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.firebaseui-idp-button:hover span{
+    color:#555555;
+}
+.user_logo {
+    width:32px;
+    height:auto;
+    max-height: 32px;
+    border-radius: 100%;
+}
+.user_logo2 {
+    width:40px;
+    height:auto;
+    max-height: 40px;
+    border-radius: 100%;
+    margin-right:5px;
+}
+.menu_btn{
+    display: none;
+}
+.menu_toggle_btn{
+    display: flex;
+    cursor: pointer;
+    height: 48px;
+    position: relative;
+    transition: all 0.6s cubic-bezier(0, 0, 0, 1) 0s;
+    user-select: none;
+    width: 48px;
+    outline: none;
+    margin-left: -2rem;
+    justify-content: center;
+    align-items: center;
+}
+.menu_toggle_btn.on{
+    transform: rotate(180deg);
+}
+.menu_toggle_btn:hover{
+    background-color: rgba(238, 238, 238, 0.171);
+    border-radius: 100%;
+}
+.sub_accordion{
+    max-height: 240px;
+    overflow: auto;
+}
+
+
+@media screen and (max-width: 991px){
+    .sideMenuContainer{
+       height: 100% !important;
+       background-color: #EEE;
+       position: absolute;
+       transition: all .5s;
+       left:-200%;
+       /* overflow-x: auto; */
+    }
+    .menu_btn{
+        display: block !important;
+    } 
+    .menu_toggle_btn{
+        display: none;
+    }
+    .swipe{
+        transition: all .5s;
+        left:0%;
+     }
+}

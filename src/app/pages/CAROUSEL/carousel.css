@@ -1,0 +1,58 @@
+.opacity-div{
+    height: 300px;
+    top: 0;
+    right: -45px;
+    opacity: 0.7;
+    background: white;
+    z-index: 0;
+}
+.main_price{
+    bottom: 0;
+    position: relative;
+    border:none;
+}
+.item_name{
+    -webkit-line-clamp: 1;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+    text-overflow:"ellipsis";
+    color: var(--color_grey);
+    font-size: "13px";
+    font-weight: 400;
+    font-size: 0.8rem;
+}
+.item_name:hover{
+    color:var(--color_lightpurple);
+}
+.off_price{
+    width:50%;
+    background: var(--color_lightpurple);
+    color:var(--color_white);
+    border-radius: 10px;
+    text-align: center;
+    line-height: 1.5em;
+}
+#carousel,#CP0, #dotss{
+    background: rgb(224, 224, 224);
+    /* border-bottom: 2px solid white; */
+}
+/* .card-img{
+    min-height: 141px;
+} */
+
+/* .rec .rec-arrow{
+    display: none !important
+}
+
+.rec .rec-dot{
+    display: none !important
+} */
+
+.rec .rec-dot{
+    display:none !important
+}
+@media screen and (max-width:500px){
+    .rec .rec-arrow{
+    display:none !important
+}}

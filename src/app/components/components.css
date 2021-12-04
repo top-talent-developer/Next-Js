@@ -1,0 +1,302 @@
+.main{
+    height: 100vh;
+  }
+  .react-flow__edge-text{
+    font-size: 14px;
+  }
+  .btn {
+    box-sizing: border-box;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+    background-color: transparent;
+    border-radius: 0.6em;
+    cursor: pointer;
+    align-self: center;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1;
+    margin: 20px;
+    padding: 10px 20px;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+  }
+  .btn:hover{
+    color: #fff;
+    outline: 0;
+  }
+  
+  .add-entity {
+    color: #e74c3c;
+    transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+    border: 2px solid #e74c3c;
+  }
+  .add-entity:hover {
+    box-shadow: 0 0 40px 40px #e74c3c inset;
+  }
+  
+  .save-btn {
+    color: #2973fd;
+    transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+    border: 2px solid #2973fd;
+  }
+  .save-btn:hover {
+    box-shadow: 0 0 40px 40px #2973fd inset;
+  }
+  .top-btns{
+    position:absolute;
+    right:130px;
+    z-index: 100;
+    top:0px;
+  }
+  .react-flow__edge-path:hover{
+    stroke: #e74c3c !important;
+    cursor: pointer;
+  }
+  .react-flow__edge-path{
+    stroke-width: 2;
+  }
+  .react-flow__edge.selected .react-flow__edge-path{
+    stroke: #ff8b8b !important;
+  }
+  .react-flow__handle:hover{
+    width:15px;
+    height:15px;
+  }
+  .react-flow__handle-right:hover{
+    right:-8px;
+  }
+  .react-flow__handle-left:hover{
+   left:-8px;
+  }
+
+
+  /* ermap rightsidebar css */
+  .right-sidebar, .left-sidebar{
+    background: #EFEFEF;
+    width: 600px;
+    max-width: 98%;
+    height: 100%;
+    position: absolute;
+    right: 0px;
+    top:0px;
+    z-index: 10;
+    box-shadow: 0px 10px 10px 0px grey;
+  }
+  .left-sidebar {
+    left:0px;
+    width: 250px;
+    z-index: 12;
+  }
+  .left-sidebar.min {
+    left:0px;
+    width:40px;
+    height: auto;
+    top:15px;
+  }
+  .left-sidebar_bg, .right-sidebar_bg{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0px;
+    top:0px;
+    z-index: 11;
+    display: none;
+    background-color: #0003;
+  }
+  .right-sidebar_bg{
+    z-index: 8;
+  }
+  .left-sidebar_bg.on, .right-sidebar_bg.on{
+    display: block;
+  }
+  .entityframe {
+    /* text-align: center;
+    margin-top: 50px; */
+    height: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+  .entities_list{
+    display: flex;
+    overflow: hidden;
+    overflow-y: auto;
+    flex-flow: column;
+    height: calc(100% - 65px);
+    width: 100%;
+    padding-left: 5px;
+    line-height: 28px;
+    font-size: 0.85rem;
+    background: #efefef;
+  }
+  .entity_div{
+    cursor: pointer;
+    width: 100%;
+    padding: 2px 5px;
+    border: 2px solid #FFF;
+    border-left-width: 4px;
+    border-right-width: 4px;
+    position: relative;
+    padding-right: 25px;
+  }
+  .entity_div:hover{
+    background-color: #eee;
+  }
+  .btn1 {
+    border: 2px solid green;
+    color: green;
+  }
+  .btn1:hover {
+    color: #fff;
+    outline: 0;
+    box-shadow: 0 0 40px 40px green inset;
+  }
+  
+  .btns {
+    box-sizing: border-box;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+    background-color: transparent;
+    border-radius: 0.6em;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1;
+    margin: 10px;
+    padding: 5px 10px;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+  }
+  
+  .btn2 {
+    border: 2px solid #e74c3c;
+    color: #e74c3c;
+  }
+  .btn2:hover {
+    color: #fff;
+    outline: 0;
+    box-shadow: 0 0 40px 40px #e74c3c inset;
+  }
+  
+  .selected-title{
+    outline: none;
+    border-radius: 5px;
+    padding: 7px;
+    margin-bottom: 10px;
+    border:1px solid rgb(161, 161, 161);
+  }
+  .selected-title:focus{
+    border:1px solid rgb(61, 61, 61) ;
+  }
+  .close-btn{
+    float: right;
+    margin: 10px;
+    font-size: 25px;
+    font-weight: 700;
+    color:#909090;
+  }
+  
+  .close-btn:hover{
+    cursor: pointer;
+    color: black;
+  }
+  .min_max-btn{
+    cursor: pointer;
+    line-height: 36px;
+    font-weight: 700;
+    width: 30px;
+  }
+  .entities_hdr{
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    line-height: 36px;
+    width: calc(100% - 75px);
+    font-size: 1.1rem;
+    padding-left: 30px; 
+    background-image: url("https://firebasestorage.googleapis.com/v0/b/rapo-prod.appspot.com/o/mystore%2Fswap.png?alt=media&token=9c1aad61-162e-487d-83a9-6f7ecf075d4a"); 
+    background-size: 20px; 
+    background-position: 6px center;
+    background-repeat: no-repeat;
+  }
+  .left-sidebar_top .cus_add_btn:hover{
+    background-color: rgba(204, 204, 204, 0.438);
+  }
+  .en_search_div{
+    display: flex;
+    width: 100%;
+    padding: 0px 5px 4px 5px;
+  }
+  .left-sidebar.min .min_max-btn{
+    padding-left: 6px;
+  }
+  .left-sidebar.min .entities_arrow_icon{
+    transform: rotate(180deg);
+  }
+  .left-sidebar.min .entities_list, .left-sidebar.min .entities_hdr, .left-sidebar.min .en_search_div, .left-sidebar.min .cus_add_btn {
+    display: none;
+  }
+  .content_container > .container-fluid[name="Entity Manager"]{
+    background-color: #FFF;
+    height: calc(100vh - 65px);
+    overflow: hidden;
+  }
+  h3.eform_hdr[name="Entity Manager"]{
+    width: 100%;
+    text-align: center;
+    color: #999;
+    font-size: 1.5rem;
+  }
+  .react-flow__edge-textbg{
+    cursor: pointer;
+    fill: #eee;
+    fill-opacity: 1;
+  }
+  .react-flow__edge-textbg:hover{
+    fill: #ddd;
+  }
+  .react-flow{
+    position: absolute !important;
+    top: 0px;
+    left: 0px;
+  }
+  .entity_nm_lbl {
+    line-height: 18px;
+    font-size: 0.8rem;
+  }
+  .entity_nm_lbl:hover{
+    text-decoration: underline;
+    color: indigo;
+  }
+  .entity_rel_counts{
+    position: absolute;
+    right: 5px;
+    top: auto;
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+  }
+  .entity_rel_in_count, .entity_rel_out_count{
+    line-height: 16px;
+    font-size: 11px;
+    cursor: pointer;
+  }
+  .entity_rel_in_icon, .entity_rel_out_icon{
+    font-size: 14px !important;
+    color: blue;
+  }
+  .entity_rel_in_icon{
+    color: green;
+    transform: rotate(180deg);
+  }
+  .en_search_div input[type=search]{
+    outline-offset: 0px;
+  }

@@ -1,0 +1,246 @@
+#CP0 {
+  border: 0.1px solid transparent;
+}
+#instantbar_section {
+  overflow: hidden;
+  /* position: relative; */
+  display: flex;
+  justify-content: space-between;
+}
+
+#right-btn {
+  right: 5px;
+}
+#left-btn {
+  left: 5px;
+}
+#slider {
+  /* position: absolute; */
+  width: fit-content;
+  display: flex;
+  width: auto !important;
+  justify-content: space-between !important;
+  /* border: 1px solid red;    */
+}
+.catagery-name:hover {
+  color: #757575;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.card {
+  width: 200px;
+  cursor: pointer;
+  position: relative;
+  outline: none;
+  overflow: hidden;
+  margin-right: 7px;
+  margin-top: 5px;
+  border: none !important;
+}
+
+@media screen and (max-width: 768px) {
+  #CP0 {
+    margin-top: -20px;
+  }
+  .sc-bdfBwQ {
+    display: none !important;
+  }
+  .saving span {
+    font-size: 45px !important;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .card-top-div {
+    width: 24px !important;
+    height: 25px !important;
+    text-align: center;
+    font-size: 0.7rem !important;
+  }
+  .main_price {
+    font-weight: 300;
+    font-size: 0.85rem;
+    color: black;
+  }
+  .category_name {
+    font-weight: normal !important;
+    font-size: 1.1rem;
+  }
+  .sc-bdfBwQ {
+    display: none !important;
+  }
+  .card-img {
+    max-width: 100px !important;
+    max-height: 100px !important;
+  }
+  #card-add-qunt {
+    /* width: 145px !important; */
+    height: 30px !important;
+    margin-top: 13px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  #card-add-qunt {
+    /* width: 125px !important; */
+    height: 30px !important;
+    margin-top: 13px;
+  }
+}
+@media screen and (max-width: 320px) {
+  #card-add-qunt {
+    /* width: 104px !important; */
+    height: 30px !important;
+    margin-top: 9px;
+  }
+}
+
+a {
+  color: var(--color_purple);
+}
+a:hover {
+  color: var(--color_purple);
+}
+.card-img {
+  max-width: 100%;
+  max-height: 150px;
+  width: auto !important;
+  min-width: inherit;
+}
+.card-top-div {
+  position: relative;
+  width: 28px;
+  top: 0px;
+  height: 28px;
+  font-size: 0.9rem;
+  text-align: center;
+  border: 1px solid var(--color_purple);
+  border-radius: 50%;
+  color: var(--color_purple);
+  cursor: pointer;
+  transition: all 0.3s;
+  z-index: 1;
+}
+
+.mainCategories .card-top-div {
+  position: absolute;
+  width: 28px;
+  right: 5px;
+  top: 25px;
+  height: 30px;
+  font-size: 0.9rem;
+  text-align: center;
+  border: 1px solid var(--color_purple);
+  border-radius: 50%;
+  color: var(--color_purple);
+  cursor: pointer;
+  transition: all 0.3s;
+  z-index: 1;
+}
+.count1 {
+  position: absolute;
+  left: 0;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  /* line-height: 2.2em; */
+  color: var(--color_white);
+  background: var(--color_purple);
+}
+.count0 {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+  /* line-height: 2.2em; */
+  box-sizing: border-box !important;
+  color: var(--color_black);
+  background: white;
+}
+
+.card-top-div:hover {
+  box-shadow: 0 0 3px black;
+}
+.card-top-div i {
+  margin-top: 0px;
+}
+.card-top-div i.addPlus {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+#card-add-qunt {
+  width: 100%;
+  height: 45px;
+  position: absolute;
+  background: white;
+  border-radius: 5px;
+  right: -105%;
+  top: 0;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 3px 10px;
+  transition: all 0.1s;
+  /* display: none !important; */
+}
+.mainCategories #card-add-qunt {
+  width: 50%;
+  height: 45px;
+  position: absolute;
+  background: white;
+  border-radius: 5px;
+  /* right: -55%; */
+  top: 10px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 3px 10px;
+  transition: all 0.1s;
+  /* display: none !important; */
+}
+.card-img {
+  box-shadow: 1px 1px 4px 0px silver;
+}
+.clearPopupSearch {
+  position: absolute;
+  top: 0;
+  right: 12%;
+  top: 18%;
+  z-index: 5 !important;
+  color: var(--color_purple);
+}
+/* sc-bdnylx */
+
+/* #dotss{
+    width: 25px;
+    height: 25px;
+    margin: 0 5px;
+    background
+} */
+
+.saving span {
+  animation-name: blink;
+  animation-duration: 1.4s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: both;
+  font-size: 50px !important;
+}
+
+.saving span:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.saving span:nth-child(3) {
+  animation-delay: 0.4s;
+}
+.saving span:nth-child(3) {
+  animation-delay: 0.6s;
+}
+@keyframes blink {
+  0% {
+    opacity: 0.2;
+  }
+  20% {
+    opacity: 1;
+    font-size: 60px!important;
+  }
+  100% {
+    opacity: 0.2;
+  }
+}
